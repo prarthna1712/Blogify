@@ -105,7 +105,7 @@ const Navbar = () => {
                 <SheetHeader>
                   <SheetTitle>Are you absolutely sure?</SheetTitle>
 
-                  <div className="sm:hidden" id="mobile-menu">
+                  <div className="sm:hidden " id="mobile-menu">
                     <div className="px-2 pt-2 pb-3 space-y-1">
                       <a
                         href="/ "
@@ -135,7 +135,6 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-      {/* // Mobile menu, show/hide based on menu state */}
     </nav>
   );
 };
