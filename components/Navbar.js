@@ -30,34 +30,40 @@ const Navbar = () => {
             <div className="flex space-x-4">
               <a
                 href="/"
-                className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                className="text-gray-300 hover:scale-125 transition-transform duration-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
               >
                 Home
               </a>
               <a
                 href="/blog"
-                className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                className="text-gray-300 hover:scale-125 transition-transform duration-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium "
               >
                 Blog
               </a>
 
               <a
                 href="/about"
-                className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                className="text-gray-300 hover:scale-125 transition-transform duration-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
               >
                 About
               </a>
 
               <a
                 href="/contact"
-                className="text-gray-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
+                className="text-gray-300 hover:scale-125 transition-transform duration-300 hover:bg-gray-700 hover:text-white px-3 py-2 rounded-md text-sm font-medium"
               >
                 Contact
               </a>
-              <Button className="mx-1" variant="outline">
+              <Button
+                className="mx-1 hover:scale-125 transition-transform duration-300"
+                variant="outline"
+              >
                 Login{" "}
               </Button>
-              <Button className="mx-1" variant="outline">
+              <Button
+                className="mx-1 hover:scale-125 transition-transform duration-300"
+                variant="outline"
+              >
                 Sign up
               </Button>
               <ModeToggle />
@@ -67,6 +73,9 @@ const Navbar = () => {
             {/* Mobile menu button */}
 
             <Sheet>
+              <span className="mx-2">
+                <ModeToggle />
+              </span>
               <SheetTrigger>
                 <span className="sr-only">Open main menu</span>
                 {!isOpen ? (
@@ -131,6 +140,12 @@ const Navbar = () => {
                       >
                         Contact
                       </a>
+                      <Button className="mx-1" variant="outline">
+                        Login{" "}
+                      </Button>
+                      <Button className="mx-1" variant="outline">
+                        Sign up
+                      </Button>
                     </div>
                   </div>
                 </SheetHeader>
