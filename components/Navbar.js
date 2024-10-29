@@ -10,6 +10,7 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
+import { ModeToggle } from "./theme-btn";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -59,6 +60,7 @@ const Navbar = () => {
               <Button className="mx-1" variant="outline">
                 Sign up
               </Button>
+              <ModeToggle />
             </div>
           </div>
           <div className="absolute inset-y-0 right-0 flex items-center sm:hidden">
