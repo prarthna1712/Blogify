@@ -75,7 +75,7 @@ export default function Home() {
 
         <div className="flex flex-wrap justify-center gap-8 mt-8">
           {/* Free Plan */}
-          <div className="max-w-xs p-6 bg-white border rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
+          <div className="max-w-xs p-6 bg-white border rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 hover:scale-105 transition-transform duration-300">
             <h3 className="text-2xl font-semibold text-gray-800 dark:text-gray-200">
               Free
             </h3>
@@ -96,7 +96,7 @@ export default function Home() {
           </div>
 
           {/* Standard Plan */}
-          <div className="max-w-xs p-6 bg-white border rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
+          <div className="max-w-xs p-6 bg-white border rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 hover:scale-105 transition-transform duration-300">
             <h3 className="text-2xl font-semibold text-gray-800 dark:text-gray-200">
               Standard
             </h3>
@@ -117,7 +117,7 @@ export default function Home() {
           </div>
 
           {/* Premium Plan */}
-          <div className="max-w-xs p-6 bg-white border rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
+          <div className="max-w-xs p-6 bg-white border rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 hover:scale-105 transition-transform duration-300">
             <h3 className="text-2xl font-semibold text-gray-800 dark:text-gray-200">
               Premium
             </h3>
