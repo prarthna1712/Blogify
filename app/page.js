@@ -64,6 +64,80 @@ export default function Home() {
           />
         </div>
       </section>
+
+      <section className="container px-4 py-10 mx-auto text-center">
+        <h2 className="text-3xl font-semibold text-gray-800 dark:text-gray-200 md:text-4xl">
+          Choose Your Plan
+        </h2>
+        <p className="mt-4 text-lg text-gray-500 dark:text-gray-300">
+          Find the plan that suits you best!
+        </p>
+
+        <div className="flex flex-wrap justify-center gap-8 mt-8">
+          {/* Free Plan */}
+          <div className="max-w-xs p-6 bg-white border rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
+            <h3 className="text-2xl font-semibold text-gray-800 dark:text-gray-200">
+              Free
+            </h3>
+            <p className="mt-4 text-gray-500 dark:text-gray-300">
+              Access basic components for free.
+            </p>
+            <p className="mt-2 text-3xl font-bold text-gray-800 dark:text-gray-200">
+              $0
+            </p>
+            <ul className="mt-4 space-y-2 text-gray-500 dark:text-gray-400">
+              <li>Basic components</li>
+              <li>Community support</li>
+              <li>Limited customization</li>
+            </ul>
+            <button className="w-full px-4 py-2 mt-6 text-white bg-primary rounded-lg hover:bg-primary/70 focus:outline-none">
+              Get Started
+            </button>
+          </div>
+
+          {/* Standard Plan */}
+          <div className="max-w-xs p-6 bg-white border rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
+            <h3 className="text-2xl font-semibold text-gray-800 dark:text-gray-200">
+              Standard
+            </h3>
+            <p className="mt-4 text-gray-500 dark:text-gray-300">
+              Get more templates and features.
+            </p>
+            <p className="mt-2 text-3xl font-bold text-gray-800 dark:text-gray-200">
+              $10/month
+            </p>
+            <ul className="mt-4 space-y-2 text-gray-500 dark:text-gray-400">
+              <li>All Free features</li>
+              <li>More component options</li>
+              <li>Priority support</li>
+            </ul>
+            <button className="w-full px-4 py-2 mt-6 text-white bg-primary rounded-lg hover:bg-primary/70 focus:outline-none">
+              Upgrade
+            </button>
+          </div>
+
+          {/* Premium Plan */}
+          <div className="max-w-xs p-6 bg-white border rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
+            <h3 className="text-2xl font-semibold text-gray-800 dark:text-gray-200">
+              Premium
+            </h3>
+            <p className="mt-4 text-gray-500 dark:text-gray-300">
+              Unlock all components and custom features.
+            </p>
+            <p className="mt-2 text-3xl font-bold text-gray-800 dark:text-gray-200">
+              $25/month
+            </p>
+            <ul className="mt-4 space-y-2 text-gray-500 dark:text-gray-400">
+              <li>All Standard features</li>
+              <li>Exclusive components</li>
+              <li>24/7 Support</li>
+            </ul>
+            <button className="w-full px-4 py-2 mt-6 text-white bg-primary rounded-lg hover:bg-primary/70 focus:outline-none">
+              Go Premium
+            </button>
+          </div>
+        </div>
+      </section>
     </main>
   );
 }
