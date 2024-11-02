@@ -37,8 +37,8 @@ export default function Home() {
           />
         </div>
       </section>
-      <section className="container px-4 py-10 mx-auto text-center  ">
-        <h2 className="text-3xl font-semibold text-gray-800 dark:text-gray-200 md:text-4xl">
+      <section className="container px-4 py-10 mx-auto text-center bg-gray-100 dark:bg-gray-900">
+        <h2 className="text-3xl font-semibold text-gray-800  dark:text-gray-200 md:text-4xl">
           Choose Your Plan
         </h2>
         <p className="mt-4 text-lg text-gray-500 dark:text-gray-300">
