@@ -47,7 +47,7 @@ export default function Home() {
 
         <div className="flex flex-wrap justify-center gap-8 mt-8">
           {/* Free Plan */}
-          <div className="max-w-xs p-6 bg-white border rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 hover:scale-105 transition-transform duration-300">
+          <div className="max-w-xs p-6 bg-white border rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-300 hover:scale-105 transition-transform duration-300">
             <h3 className="text-2xl font-semibold text-gray-800 dark:text-gray-200">
               Free
             </h3>
@@ -62,13 +62,13 @@ export default function Home() {
               <li>Community support</li>
               <li>Limited customization</li>
             </ul>
-            <button className="w-full px-4 py-2 mt-6 text-white bg-primary rounded-lg hover:bg-primary/70 focus:outline-none">
+            <button className="w-full px-4 py-2 mt-6 text-white bg-primary rounded-lg hover:bg-primary/70 focus:outline-none dark:text-black">
               Get Started
             </button>
           </div>
 
           {/* Standard Plan */}
-          <div className="max-w-xs p-6 bg-white border rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 hover:scale-105 transition-transform duration-300">
+          <div className="max-w-xs p-6 bg-white border rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-300 hover:scale-105 transition-transform duration-300">
             <h3 className="text-2xl font-semibold text-gray-800 dark:text-gray-200">
               Standard
             </h3>
@@ -83,13 +83,13 @@ export default function Home() {
               <li>More component options</li>
               <li>Priority support</li>
             </ul>
-            <button className="w-full px-4 py-2 mt-6 text-white bg-primary rounded-lg hover:bg-primary/70 focus:outline-none">
+            <button className="w-full px-4 py-2 mt-6 text-white bg-primary rounded-lg hover:bg-primary/70 focus:outline-none dark:text-black">
               Upgrade
             </button>
           </div>
 
           {/* Premium Plan */}
-          <div className="max-w-xs p-6 bg-white border rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 hover:scale-105 transition-transform duration-300">
+          <div className="max-w-xs p-6 bg-white border rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-300 hover:scale-105 transition-transform duration-300">
             <h3 className="text-2xl font-semibold text-gray-800 dark:text-gray-200">
               Premium
             </h3>
@@ -104,7 +104,7 @@ export default function Home() {
               <li>Exclusive components</li>
               <li>24/7 Support</li>
             </ul>
-            <button className="w-full px-4 py-2 mt-6 text-white bg-primary rounded-lg hover:bg-primary/70 focus:outline-none">
+            <button className="w-full px-4 py-2 mt-6 text-white bg-primary rounded-lg hover:bg-primary/70 focus:outline-none dark:text-black">
               Go Premium
             </button>
           </div>
@@ -148,6 +148,60 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      <section className="container px-4 py-10 mx-auto text-center bg-gray-100 dark:bg-gray-900">
+        <h2 className="text-3xl font-semibold text-gray-800 dark:text-gray-200 md:text-4xl">
+          Latest Blog Posts
+        </h2>
+        <p className="mt-4 text-lg text-gray-500 dark:text-gray-400">
+          Discover tips, resources, and updates from our team!
+        </p>
+
+        <div className="flex flex-wrap justify-center gap-8 mt-8">
+          {/* Blog Post 1 */}
+          <div className="max-w-xs p-6 bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-300 hover:scale-105 transition-transform duration-300">
+            <h3 className="text-2xl font-semibold text-gray-800 dark:text-gray-200">
+              Getting Started with Tailwind CSS
+            </h3>
+            <p className="mt-4 text-gray-500 dark:text-gray-400">
+              Learn the basics of Tailwind CSS and how to quickly set up your
+              project for faster, easier styling.
+            </p>
+            <button className="w-full px-4 py-2 mt-6 text-white bg-primary rounded-lg hover:bg-primary/70 focus:outline-none dark:bg-primary dark:hover:bg-primary/80 dark:text-black">
+              Read More
+            </button>
+          </div>
+
+          {/* Blog Post 2 */}
+          <div className="max-w-xs p-6 bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-300 hover:scale-105 transition-transform duration-300">
+            <h3 className="text-2xl font-semibold text-gray-800 dark:text-gray-200">
+              10 Essential UI Components for Web Apps
+            </h3>
+            <p className="mt-4 text-gray-500 dark:text-gray-400">
+              Discover the must-have UI components that will enhance user
+              experience and streamline your development process.
+            </p>
+            <button className="w-full px-4 py-2 mt-6 text-white bg-primary rounded-lg hover:bg-primary/70 focus:outline-none dark:bg-primary dark:hover:bg-primary/80 dark:text-black">
+              Read More
+            </button>
+          </div>
+
+          {/* Blog Post 3 */}
+          <div className="max-w-xs p-6 bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-300 hover:scale-105 transition-transform duration-300">
+            <h3 className="text-2xl font-semibold text-gray-800 dark:text-gray-200">
+              Advanced Customization with Tailwind CSS
+            </h3>
+            <p className="mt-4 text-gray-500 dark:text-gray-400">
+              Dive into advanced customization options in Tailwind CSS to create
+              unique and responsive layouts for any project.
+            </p>
+            <button className="w-full px-4 py-2 mt-6 text-white bg-primary rounded-lg hover:bg-primary/70 focus:outline-none dark:bg-primary dark:hover:bg-primary/80 dark:text-black">
+              Read More
+            </button>
+          </div>
+        </div>
+      </section>
+
       <section className="container px-4 py-10 mx-auto text-center">
         <h2 className="text-3xl font-semibold text-gray-800 dark:text-gray-200 md:text-4xl">
           Frequently Asked Questions
