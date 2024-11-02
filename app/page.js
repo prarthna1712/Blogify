@@ -158,7 +158,7 @@ export default function Home() {
 
         <div className="flex flex-wrap justify-center gap-8 mt-8">
           {/* FAQ Item 1 */}
-          <div className="max-w-xs p-6 bg-white border rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 hover:scale-x-105 transition-transform duration-300">
+          <div className="max-w-xs p-6 bg-white border rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 hover:scale-105 transition-transform duration-300">
             <h4 className="font-semibold text-gray-800 dark:text-gray-200">
               How do I get started?
             </h4>
@@ -168,7 +168,7 @@ export default function Home() {
           </div>
 
           {/* FAQ Item 2 */}
-          <div className="max-w-xs p-6 bg-white border rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 hover:scale-x-105 transition-transform duration-300">
+          <div className="max-w-xs p-6 bg-white border rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 hover:scale-105 transition-transform duration-300">
             <h4 className="font-semibold text-gray-800 dark:text-gray-200">
               Are there any free options?
             </h4>
