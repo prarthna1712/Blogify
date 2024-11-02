@@ -3,7 +3,7 @@ import React from "react";
 export default function Home() {
   return (
     <main>
-      <section className="container px-4 py-10 mx-auto lg:h-128 lg:space-x-8 lg:flex lg:items-center">
+      <section className="container px-4 py-10 mx-auto lg:h-128 lg:space-x-8 lg:flex lg:items-center bg-gray-200">
         <div className="w-full text-center lg:text-left lg:w-1/2 lg:-mt-8">
           <h1 className="text-3xl leading-snug text-gray-800 dark:text-gray-200 md:text-4xl">
             A <span className="font-semibold">free repository</span> for
@@ -26,34 +26,7 @@ export default function Home() {
             <form
               action="https://www.creative-tim.com/twcomponents/search"
               className="flex flex-wrap justify-between md:flex-row"
-            >
-              <input
-                type="search"
-                name="query"
-                placeholder="Search Components"
-                required
-                className="flex-1 h-10 px-4 m-1 text-gray-700 placeholder-gray-400 bg-transparent border-none appearance-none lg:h-12 dark:text-gray-200 focus:outline-none focus:placeholder-transparent focus:ring-0"
-              />
-              <button
-                type="submit"
-                className="flex items-center justify-center w-full p-2 m-1 text-white transition-colors duration-300 transform rounded-lg lg:w-12 lg:h-12 lg:p-0 bg-primary hover:bg-primary/70 focus:outline-none focus:bg-primary/70"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                  className="w-6 h-6"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth="2"
-                    d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-                  />
-                </svg>
-              </button>
-            </form>
+            ></form>
           </div>
         </div>
         <div className="w-full mt-4 lg:mt-0 lg:w-1/2">
@@ -64,8 +37,7 @@ export default function Home() {
           />
         </div>
       </section>
-
-      <section className="container px-4 py-10 mx-auto text-center">
+      <section className="container px-4 py-10 mx-auto text-center  ">
         <h2 className="text-3xl font-semibold text-gray-800 dark:text-gray-200 md:text-4xl">
           Choose Your Plan
         </h2>
@@ -135,6 +107,75 @@ export default function Home() {
             <button className="w-full px-4 py-2 mt-6 text-white bg-primary rounded-lg hover:bg-primary/70 focus:outline-none">
               Go Premium
             </button>
+          </div>
+        </div>
+      </section>
+      <section className="container px-4 py-10 mx-auto text-center bg-gray-200">
+        <h2 className="text-3xl font-semibold text-gray-800 dark:text-gray-200 md:text-4xl">
+          What Our Users Say
+        </h2>
+        <p className="mt-4 text-lg text-gray-500 dark:text-gray-300">
+          Hear from our satisfied users!
+        </p>
+
+        <div className="flex flex-wrap justify-center gap-8 mt-8">
+          {/* Testimonial 1 */}
+          <div className="max-w-xs p-6 bg-white border rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
+            <p className="text-gray-500 dark:text-gray-300">
+              "This repository has transformed the way I build my projects! The
+              components are easy to use and look fantastic."
+            </p>
+            <h4 className="mt-4 font-semibold text-gray-800 dark:text-gray-200">
+              Jane Doe
+            </h4>
+            <p className="text-sm text-gray-500 dark:text-gray-400">
+              Web Developer
+            </p>
+          </div>
+
+          {/* Testimonial 2 */}
+          <div className="max-w-xs p-6 bg-white border rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700">
+            <p className="text-gray-500 dark:text-gray-300">
+              "I love the variety of components available. It saved me so much
+              time in my projects!"
+            </p>
+            <h4 className="mt-4 font-semibold text-gray-800 dark:text-gray-200">
+              John Smith
+            </h4>
+            <p className="text-sm text-gray-500 dark:text-gray-400">
+              UI/UX Designer
+            </p>
+          </div>
+        </div>
+      </section>
+      <section className="container px-4 py-10 mx-auto text-center">
+        <h2 className="text-3xl font-semibold text-gray-800 dark:text-gray-200 md:text-4xl">
+          Frequently Asked Questions
+        </h2>
+        <p className="mt-4 text-lg text-gray-500 dark:text-gray-300">
+          Have questions? We have answers!
+        </p>
+
+        <div className="flex flex-wrap justify-center gap-8 mt-8">
+          {/* FAQ Item 1 */}
+          <div className="max-w-xs p-6 bg-white border rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 hover:scale-x-105 transition-transform duration-300">
+            <h4 className="font-semibold text-gray-800 dark:text-gray-200">
+              How do I get started?
+            </h4>
+            <p className="mt-2 text-gray-500 dark:text-gray-300">
+              Simply choose a plan and sign up to start using the components!
+            </p>
+          </div>
+
+          {/* FAQ Item 2 */}
+          <div className="max-w-xs p-6 bg-white border rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-700 hover:scale-x-105 transition-transform duration-300">
+            <h4 className="font-semibold text-gray-800 dark:text-gray-200">
+              Are there any free options?
+            </h4>
+            <p className="mt-2 text-gray-500 dark:text-gray-300">
+              Yes, we offer a free plan that provides access to basic
+              components.
+            </p>
           </div>
         </div>
       </section>
