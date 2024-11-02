@@ -5,7 +5,7 @@ export default function Home() {
     <main>
       <section className="container px-4 py-10 mx-auto lg:h-128 lg:space-x-8 lg:flex lg:items-center bg-gray-200">
         <div className="w-full text-center lg:text-left lg:w-1/2 lg:-mt-8">
-          <h1 className="text-3xl leading-snug text-gray-800 dark:text-gray-200 md:text-4xl">
+          <h1 className="text-3xl leading-snug text-gray-800 dark:text-gray-800 md:text-4xl">
             A <span className="font-semibold">free repository</span> for
             community <br className="hidden lg:block" /> components using
             <span
@@ -16,7 +16,7 @@ export default function Home() {
             </span>
           </h1>
           <div>
-            <p className="mt-4 text-lg text-gray-500 dark:text-gray-300">
+            <p className="mt-4 text-lg text-gray-500 dark:text-gray-400">
               Open source Tailwind UI components and templates to{" "}
               <br className="hidden lg:block" /> bootstrap your new apps,
               projects or landing sites!
@@ -111,10 +111,10 @@ export default function Home() {
         </div>
       </section>
       <section className="container px-4 py-10 mx-auto text-center bg-gray-200">
-        <h2 className="text-3xl font-semibold text-gray-800 dark:text-gray-200 md:text-4xl">
+        <h2 className="text-3xl font-semibold text-gray-800 dark:text-gray-800 md:text-4xl">
           What Our Users Say
         </h2>
-        <p className="mt-4 text-lg text-gray-500 dark:text-gray-300">
+        <p className="mt-4 text-lg text-gray-500 dark:text-gray-400">
           Hear from our satisfied users!
         </p>
 
