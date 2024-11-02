@@ -45,7 +45,7 @@ export default function Home() {
           Find the plan that suits you best!
         </p>
 
-        <div className="flex flex-wrap justify-center gap-8 mt-8">
+        <div className="flex flex-wrap justify-center gap-8 mt-8 ">
           {/* Free Plan */}
           <div className="max-w-xs p-6 bg-white border rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-300 hover:scale-105 transition-transform duration-300">
             <h3 className="text-2xl font-semibold text-gray-800 dark:text-gray-200">
@@ -89,7 +89,7 @@ export default function Home() {
           </div>
 
           {/* Premium Plan */}
-          <div className="max-w-xs p-6 bg-white border rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-300 hover:scale-105 transition-transform duration-300">
+          <div className="max-w-xs p-6 bg-white border rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-300 hover:scale-105 transition-transform duration-300 ">
             <h3 className="text-2xl font-semibold text-gray-800 dark:text-gray-200">
               Premium
             </h3>
@@ -148,7 +148,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
       <section className="container px-4 py-10 mx-auto text-center bg-gray-100 dark:bg-gray-900">
         <h2 className="text-3xl font-semibold text-gray-800 dark:text-gray-200 md:text-4xl">
           Latest Blog Posts
@@ -160,7 +159,12 @@ export default function Home() {
         <div className="flex flex-wrap justify-center gap-8 mt-8">
           {/* Blog Post 1 */}
           <div className="max-w-xs p-6 bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-300 hover:scale-105 transition-transform duration-300">
-            <h3 className="text-2xl font-semibold text-gray-800 dark:text-gray-200">
+            <img
+              src="/tailwind.webp"
+              alt="Getting Started with Tailwind CSS"
+              className="w-full h-40 object-cover rounded-lg"
+            />
+            <h3 className="mt-4 text-2xl font-semibold text-gray-800 dark:text-gray-200">
               Getting Started with Tailwind CSS
             </h3>
             <p className="mt-4 text-gray-500 dark:text-gray-400">
@@ -174,7 +178,12 @@ export default function Home() {
 
           {/* Blog Post 2 */}
           <div className="max-w-xs p-6 bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-300 hover:scale-105 transition-transform duration-300">
-            <h3 className="text-2xl font-semibold text-gray-800 dark:text-gray-200">
+            <img
+              src="/component-10.webp"
+              alt="10 Essential UI Components for Web Apps"
+              className="w-full h-40 object-cover rounded-lg"
+            />
+            <h3 className="mt-4 text-2xl font-semibold text-gray-800 dark:text-gray-200">
               10 Essential UI Components for Web Apps
             </h3>
             <p className="mt-4 text-gray-500 dark:text-gray-400">
@@ -188,12 +197,17 @@ export default function Home() {
 
           {/* Blog Post 3 */}
           <div className="max-w-xs p-6 bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-300 hover:scale-105 transition-transform duration-300">
-            <h3 className="text-2xl font-semibold text-gray-800 dark:text-gray-200">
-              Advanced Customization with Tailwind CSS
+            <img
+              src="/shadcn.webp"
+              alt="Advanced Customization with ShadCN"
+              className="w-full h-40 object-cover rounded-lg"
+            />
+            <h3 className="mt-4 text-2xl font-semibold text-gray-800 dark:text-gray-200">
+              Advanced Customization with ShadCN
             </h3>
             <p className="mt-4 text-gray-500 dark:text-gray-400">
-              Dive into advanced customization options in Tailwind CSS to create
-              unique and responsive layouts for any project.
+              Discover how ShadCN can help you create highly customizable UI
+              components with a consistent design language.
             </p>
             <button className="w-full px-4 py-2 mt-6 text-white bg-primary rounded-lg hover:bg-primary/70 focus:outline-none dark:bg-primary dark:hover:bg-primary/80 dark:text-black">
               Read More
