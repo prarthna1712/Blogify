@@ -9,7 +9,7 @@ const Blog = () => {
       slug: "introduction-to-nextjs",
       date: "2024-11-06",
       author: "John Doe",
-      image: "/images/nextjs.jpg",
+      image: "/tailwind.webp",
     },
     {
       title: "Advanced React Patterns",
@@ -18,7 +18,16 @@ const Blog = () => {
       slug: "advanced-react-patterns",
       date: "2024-11-04",
       author: "Jane Smith",
-      image: "/images/react-patterns.jpg",
+      image: "/component-10.webp",
+    },
+    {
+      title: "Advanced React Patterns",
+      description:
+        "Explore advanced patterns in React to build powerful, scalable applications.",
+      slug: "advanced-react-patterns",
+      date: "2024-11-04",
+      author: "Jane Smith",
+      image: "/shadcn.webp",
     },
     // Add more blogs as needed
   ];
