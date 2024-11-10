@@ -1,4 +1,6 @@
 import React from "react";
+import { buttonVariants } from "@/components/ui/button";
+import Link from "next/link";
 
 const Blog = () => {
   const blogs = [
@@ -34,7 +36,7 @@ const Blog = () => {
 
   return (
     <>
-      <div className="container mx-auto px-4 py-10 dark:bg-gray-200">
+      <div className="container mx-auto px-4 py-10 dark:bg-gray-200 bg-gray-200">
         <h1 className="text-3xl font-bold text-center mb-8 dark:text-gray-700">
           Our Blog
         </h1>
@@ -56,10 +58,14 @@ const Blog = () => {
                   <p>By {blog.author}</p>
                   <p>{new Date(blog.date).toLocaleDateString()}</p>
                 </div>
-                <button className="w-full px-4 py-2 mt-6 text-white bg-primary rounded-lg hover:bg-primary/70 focus:outline-none dark:bg-primary dark:hover:bg-primary/80 dark:text-black">
-                  <a href="https://react.dev/">Read More →</a>
-                </button>
               </div>
+
+              <Link
+                href={`/blogpost${blog.slug}`}
+                className={buttonVariants({ variant: "outline" })}
+              >
+                Click here
+              </Link>
             </div>
           ))}
         </div>
