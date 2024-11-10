@@ -57,7 +57,7 @@ const Blog = () => {
                   <p>{new Date(blog.date).toLocaleDateString()}</p>
                 </div>
                 <button className="w-full px-4 py-2 mt-6 text-white bg-primary rounded-lg hover:bg-primary/70 focus:outline-none dark:bg-primary dark:hover:bg-primary/80 dark:text-black">
-                  Read More →
+                  <a href="https://react.dev/">Read More →</a>
                 </button>
               </div>
             </div>
