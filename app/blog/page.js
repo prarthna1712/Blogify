@@ -1,38 +1,47 @@
 import React from "react";
 import { buttonVariants } from "@/components/ui/button";
 import Link from "next/link";
+import fs from "fs";
+import matter from "gray-matter";
+
+const dirContent = fs.readdirSync("content", "utf-8");
+const blogs = dirContent.map((file) => {
+  const fileContent = fs.readFileSync(`content/${file}`, "utf-8");
+  const { data } = matter(fileContent);
+  return data;
+});
 
 const Blog = () => {
-  const blogs = [
-    {
-      title: "Introduction to Next.js",
-      description:
-        "Learn the basics of Next.js and why it’s a great framework for building React applications.",
-      slug: "introduction-to-nextjs",
-      date: "2024-11-06",
-      author: "John Doe",
-      image: "/tailwind.webp",
-    },
-    {
-      title: "Advanced React Patterns",
-      description:
-        "Explore advanced patterns in React to build powerful, scalable applications.",
-      slug: "advanced-react-patterns",
-      date: "2024-11-04",
-      author: "Jane Smith",
-      image: "/component-10.webp",
-    },
-    {
-      title: "Advanced React Patterns",
-      description:
-        "Explore advanced patterns in React to build powerful, scalable applications.",
-      slug: "advanced-react-patterns",
-      date: "2024-11-04",
-      author: "Jane Smith",
-      image: "/shadcn.webp",
-    },
-    // Add more blogs as needed
-  ];
+  // const blogs = [
+  //   {
+  //     title: "Introduction to Next.js",
+  //     description:
+  //       "Learn the basics of Next.js and why it’s a great framework for building React applications.",
+  //     slug: "introduction-to-nextjs",
+  //     date: "2024-11-06",
+  //     author: "John Doe",
+  //     image: "/tailwind.webp",
+  //   },
+  //   {
+  //     title: "Advanced React Patterns",
+  //     description:
+  //       "Explore advanced patterns in React to build powerful, scalable applications.",
+  //     slug: "advanced-react-patterns",
+  //     date: "2024-11-04",
+  //     author: "Jane Smith",
+  //     image: "/component-10.webp",
+  //   },
+  //   {
+  //     title: "Advanced React Patterns",
+  //     description:
+  //       "Explore advanced patterns in React to build powerful, scalable applications.",
+  //     slug: "advanced-react-patterns",
+  //     date: "2024-11-04",
+  //     author: "Jane Smith",
+  //     image: "/shadcn.webp",
+  //   },
+  //   // Add more blogs as needed
+  // ];
 
   return (
     <>
@@ -61,7 +70,7 @@ const Blog = () => {
               </div>
 
               <Link
-                href={`/blogpost${blog.slug}`}
+                href={`/blogpost/${blog.slug}`}
                 className={`buttonVariants({ variant: "outline" })  dark:text-gray-600 `}
               >
                 Click here
