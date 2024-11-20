@@ -12,37 +12,6 @@ const blogs = dirContent.map((file) => {
 });
 
 const Blog = () => {
-  // const blogs = [
-  //   {
-  //     title: "Introduction to Next.js",
-  //     description:
-  //       "Learn the basics of Next.js and why it’s a great framework for building React applications.",
-  //     slug: "introduction-to-nextjs",
-  //     date: "2024-11-06",
-  //     author: "John Doe",
-  //     image: "/tailwind.webp",
-  //   },
-  //   {
-  //     title: "Advanced React Patterns",
-  //     description:
-  //       "Explore advanced patterns in React to build powerful, scalable applications.",
-  //     slug: "advanced-react-patterns",
-  //     date: "2024-11-04",
-  //     author: "Jane Smith",
-  //     image: "/component-10.webp",
-  //   },
-  //   {
-  //     title: "Advanced React Patterns",
-  //     description:
-  //       "Explore advanced patterns in React to build powerful, scalable applications.",
-  //     slug: "advanced-react-patterns",
-  //     date: "2024-11-04",
-  //     author: "Jane Smith",
-  //     image: "/shadcn.webp",
-  //   },
-  //   // Add more blogs as needed
-  // ];
-
   return (
     <>
       <div className="container mx-auto px-4 py-10 dark:bg-gray-200 bg-gray-200">
@@ -71,7 +40,9 @@ const Blog = () => {
 
               <Link
                 href={`/blogpost/${blog.slug}`}
-                className={`buttonVariants({ variant: "outline" })  dark:text-gray-600 `}
+                className={`${buttonVariants({
+                  variant: "outline",
+                })} inline-block mt-4 p-2 rounded-md text-center dark:text-gray-600`}
               >
                 Click here
               </Link>
@@ -79,7 +50,6 @@ const Blog = () => {
           ))}
         </div>
       </div>
-      <div></div>
     </>
   );
 };

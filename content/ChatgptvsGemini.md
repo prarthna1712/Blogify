@@ -1,9 +1,9 @@
 ---
 title: ChatGPT vs. GEMINI AI
-description: A comprehensive comparison of OpenAI's ChatGPT and Google's Gemini AI, highlighting features, strengths, and use cases.
-slug: chatgpt-vs-gemini-ai
-date: 2024-11-20
-author: Your Name
+description: A comprehensive comparison of OpenAI's ChatGPT and Google's Gemini AI.
+slug: ChatgptvsGemini
+date: 2024-11-2
+author:
 image: /chtgptvsgemini.webp
 ---
 

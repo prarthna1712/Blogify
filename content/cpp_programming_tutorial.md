@@ -1,7 +1,7 @@
 ---
 title: C++ Tutorial
 description: A comprehensive guide to learning C++ programming, covering basic to advanced concepts.
-slug: c-plus-plus-tutorial
+slug: cpp_programming_tutorial
 date: 2024-12-3
 author: John Doe
 image: /c++.webp

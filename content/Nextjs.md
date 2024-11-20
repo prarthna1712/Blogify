@@ -1,8 +1,8 @@
 ---
 title: Introduction to Next.js
 description: Learn the basics of Next.js and why it’s a great framework for building React applications.
-slug: introduction-to-nextjs
-date: 2024-11-06
+slug: Nextjs
+date: 2024-11-4
 author: John Doe
 image: /tailwind.webp
 ---
