@@ -11,6 +11,7 @@ image: /c++.webp
 
 Welcome to the C++ programming tutorial. Whether you're a beginner or an experienced developer, this guide will help you master C++ from the ground up.
 
+<!--
 ## Table of Contents
 
 1. [Introduction to C++](#introduction-to-c++)
@@ -21,40 +22,42 @@ Welcome to the C++ programming tutorial. Whether you're a beginner or an experie
 6. [Functions in C++](#functions-in-c++)
 7. [Object-Oriented Programming](#object-oriented-programming)
 8. [Advanced Concepts](#advanced-concepts)
-9. [Conclusion](#conclusion)
+9. [Conclusion](#conclusion) -->
 
 ## Introduction to C++
 
-C++ is a general-purpose, high-performance programming language that is widely used for developing software where performance is critical, such as games, real-time systems, and applications requiring high performance.
+C++ is a general-purpose, high-performance programming language widely used in scenarios requiring performance-critical software, such as games, real-time systems, and applications with intensive computational needs.
 
 ### History of C++
 
 - Developed by **Bjarne Stroustrup** in 1979 at Bell Labs.
-- Originally designed to be an enhancement to the C programming language by adding object-oriented features.
+- Designed to enhance the C programming language by adding object-oriented features.
+- C++ is one of the most influential languages in modern programming.
 
 ## Setting Up Your Environment
 
-Before you can start writing C++ programs, you need to set up a development environment. Follow these steps:
+To start writing C++ programs, set up a development environment by following these steps:
 
-1. **Install a C++ compiler:**
+### Step 1: Install a C++ Compiler
 
-   - On Windows, you can use **MinGW** or **Microsoft Visual Studio**.
-   - On macOS, you can use **Xcode** or **Homebrew** to install the `g++` compiler.
-   - On Linux, install `g++` using your package manager.
+- **Windows:**
+  - Use **MinGW** or **Microsoft Visual Studio**.
+- **macOS:**
+  - Install **Xcode** or use **Homebrew** to install the `g++` compiler.
+- **Linux:**
+  - Install `g++` using your distribution’s package manager (`sudo apt install g++` for Ubuntu).
 
-2. **Install a text editor or IDE:**
-   - **Visual Studio Code**, **CLion**, or **Code::Blocks** are popular choices for writing C++ code.
+### Step 2: Install a Text Editor or IDE
 
-## Basic Syntax and Structure
+- Popular options:
+  - **Visual Studio Code**
+  - **CLion**
+  - **Code::Blocks**
 
-A simple C++ program looks like this:
+### Step 3: Verify Installation
 
-```cpp
-#include <iostream>
-using namespace std;
+Run the following command in your terminal to check if the compiler is installed:
 
-int main() {
-    cout << "Hello, World!" << endl;
-    return 0;
-}
+```bash
+g++ --version
 ```
