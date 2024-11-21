@@ -15,6 +15,7 @@ This post dives into a detailed comparison between **ChatGPT** by OpenAI and **G
 
 ## Key Features
 
+```
 | Feature                 | ChatGPT                              | Gemini AI                         |
 | ----------------------- | ------------------------------------ | --------------------------------- |
 | **Developer**           | OpenAI                               | Google DeepMind                   |
@@ -22,6 +23,7 @@ This post dives into a detailed comparison between **ChatGPT** by OpenAI and **G
 | **Availability**        | API, web app, and mobile apps        | Integrated into Google services   |
 | **Languages Supported** | 100+                                 | 100+                              |
 | **Fine-tuning**         | Limited custom fine-tuning           | Advanced, domain-specific tuning  |
+```
 
 ---
 

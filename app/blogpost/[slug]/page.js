@@ -1,7 +1,13 @@
 import fs from "fs";
 import matter from "gray-matter";
+import { notFound } from "next/navigation";
 export default async function Page({ params }) {
   const filepath = `content/${params.slug}.md`;
+
+  if (!fs.existsSync(filepath)) {
+    notFound();
+    return;
+  }
   const fileContent = fs.readFileSync(filepath, "utf-8");
   const { content, data } = matter(fileContent);
 
