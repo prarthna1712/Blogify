@@ -131,21 +131,7 @@ body {
   color: #1a1a1a; /* Dark gray for list items */
 }
 
-/* Inline code styles */
-.prose code {
-  background-color: #f3f4f6; /* Light gray background for light mode */
-  color: #130d0f; /* Reddish text for light mode */
-  padding: 0.2rem 0.4rem; /* Add padding for readability */
-  border-radius: 0.3rem; /* Rounded corners */
-  font-family: "Courier New", Courier, monospace; /* Monospace font */
-  font-size: 0.95em; /* Slightly smaller font */
-}
 
-/* Dark mode styles for inline code */
-.dark .prose code {
-  background-color: #2d3748; /* Dark gray background for dark mode */
-  color: #f6f4f0; /* Yellowish text for dark mode */
-}
 .prose strong, .prose b {
   color: inherit; /* Inherit text color from the parent container */
 }
