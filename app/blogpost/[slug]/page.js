@@ -1,6 +1,13 @@
 import fs from "fs";
 import matter from "gray-matter";
 import { notFound } from "next/navigation";
+import rehypeDocument from "rehype-document";
+import rehypeFormat from "rehype-format";
+import rehypeStringify from "rehype-stringify";
+import remarkParse from "remark-parse";
+import remarkRehype from "remark-rehype";
+import { unified } from "unified";
+
 export default async function Page({ params }) {
   const filepath = `content/${params.slug}.md`;
 
@@ -10,6 +17,15 @@ export default async function Page({ params }) {
   }
   const fileContent = fs.readFileSync(filepath, "utf-8");
   const { content, data } = matter(fileContent);
+
+  const processor = unified()
+    .use(remarkParse)
+    .use(remarkRehype)
+    .use(rehypeDocument, { title: "👋🌍" })
+    .use(rehypeFormat)
+    .use(rehypeStringify);
+
+  const htmlContent = (await processor.process(content)).toString();
 
   return (
     <div className="max-w-5xl mx-auto p-4">
@@ -22,7 +38,7 @@ export default async function Page({ params }) {
       </blockquote>
       <div
         className="prose prose-lg"
-        dangerouslySetInnerHTML={{ __html: content }}
+        dangerouslySetInnerHTML={{ __html: htmlContent }}
       ></div>
     </div>
   );
