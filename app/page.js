@@ -217,7 +217,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="container px-4 py-10 mx-auto text-center">
+      <section className="container px-4 py-10 mx-auto text-center ">
         <h2 className="text-3xl font-semibold text-gray-800 dark:text-gray-200 md:text-4xl">
           Frequently Asked Questions
         </h2>
