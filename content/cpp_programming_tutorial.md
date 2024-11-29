@@ -82,6 +82,7 @@ Variables are containers used to store data values. C++ supports various data ty
 
 ### Common Data Types
 
+```
 | Data Type | Description                        | Example                      |
 | --------- | ---------------------------------- | ---------------------------- |
 | `int`     | Integer values                     | `int age = 25;`              |
@@ -90,6 +91,7 @@ Variables are containers used to store data values. C++ supports various data ty
 | `char`    | Single characters                  | `char grade = 'A';`          |
 | `string`  | Textual data                       | `string name = "John";`      |
 | `bool`    | Boolean values (`true` or `false`) | `bool isActive = true;`      |
+```
 
 ---
 
