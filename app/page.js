@@ -170,7 +170,9 @@ export default function Home() {
             </h3>
             <p className="mt-4 text-gray-500 dark:text-gray-400">
               Learn the basics of Tailwind CSS and how to quickly set up your
-              project for faster, easier styling.
+              project for faster, easier styling.Tailwind's utility-first
+              approach simplifies designing responsive, modern, and visually
+              appealing web applications.
             </p>
             <button className="w-full px-4 py-2 mt-6 text-white bg-primary rounded-lg hover:bg-primary/70 focus:outline-none dark:bg-primary dark:hover:bg-primary/80 dark:text-black">
               Read More
