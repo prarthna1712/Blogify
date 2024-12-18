@@ -5,7 +5,7 @@ export default function Contact() {
   return (
     <div className="min-h-screen bg-gray-100 dark:bg-gray-900 py-10 px-4">
       <div className="max-w-4xl mx-auto bg-white dark:bg-gray-800 shadow-md rounded-lg p-6">
-        <h1 className="text-3xl font-semibold text-gray-800 dark:text-white text-center">
+        <h1 className="text-3xl font-semibold text-gray-800 dark:text-white text-center ">
           Get in Touch
         </h1>
         <p className="text-gray-600 dark:text-gray-300 text-center mt-2">
