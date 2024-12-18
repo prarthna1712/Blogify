@@ -669,6 +669,7 @@ Introduced in C++11, these concepts optimize resource management by eliminating 
     }
     ~MyClass() { delete data; }
   };
+
   ```
 
   - Rvalue References (&&)

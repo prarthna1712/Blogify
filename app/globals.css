@@ -131,16 +131,18 @@ body {
   color: #1a1a1a; /* Dark gray for list items */
 }
 
-
-.prose strong, .prose b {
+.prose strong,
+.prose b {
   color: inherit; /* Inherit text color from the parent container */
 }
 
-.prose strong, .prose b {
+.prose strong,
+.prose b {
   color: #111; /* Regular color for light mode */
 }
 
-.dark .prose strong, .dark .prose b {
+.dark .prose strong,
+.dark .prose b {
   color: #e2e8f0; /* Light color for dark mode */
 }
 
@@ -174,11 +176,3 @@ body {
 .prose ul li {
   margin-bottom: 0.5rem; /* Space between list items */
 }
-
-/* For a specific syntax of `-` (for markdown bullet points), you can target the nested items if needed */
-.prose ul li code {
-  background-color: #f3f4f6; /* Light gray background for inline code in list */
-  padding: 0.2rem 0.4rem;
-  border-radius: 0.3rem;
-}
-
