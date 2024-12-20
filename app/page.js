@@ -34,7 +34,7 @@ export default function Home() {
               className="font-semibold underline decoration-primary"
               href="https://tailwindcss.com/"
             >
-              Tailwind CSS
+              <span ref={el} />
             </span>
           </h1>
           <div>
