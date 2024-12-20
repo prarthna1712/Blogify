@@ -1,6 +1,28 @@
-import React from "react";
+"use client";
+import React, { useRef, useEffect } from "react";
+import Typed from "typed.js";
 
 export default function Home() {
+  // Create reference to store the DOM element containing the animation
+  const el = React.useRef(null);
+
+  React.useEffect(() => {
+    const typed = new Typed(el.current, {
+      strings: [
+        "Coding",
+        "Web Development",
+        "Software Engineering",
+        "Data Science",
+        "Machine Learning",
+      ],
+      typeSpeed: 50,
+    });
+
+    return () => {
+      // Destroy Typed instance during cleanup to stop animation
+      typed.destroy();
+    };
+  }, []);
   return (
     <main>
       <section className="container px-4 py-10 mx-auto lg:h-128 lg:space-x-8 lg:flex lg:items-center bg-gray-200">
