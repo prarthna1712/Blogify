@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import {
   Sheet,
@@ -11,12 +11,36 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { ModeToggle } from "./theme-btn";
-
+import LoadingBar from "react-top-loading-bar";
+import { usePathname } from "next/navigation";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [progress, setprogress] = useState(0);
+  const pathname = usePathname;
+  useEffect(() => {
+    setprogress(30);
+    setTimeout(() => {
+      setprogress(70);
+    }, 100);
+
+    setTimeout(() => {
+      setprogress(100);
+    }, 800);
+  }, [pathname]);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setprogress(0);
+    }, 900);
+  }, []);
 
   return (
     <nav className="p-4 bg-background/50 sticky top-0 border-b backdrop-blur z-10">
+      <LoadingBar
+        color="#f11946"
+        progress={progress}
+        onLoaderFinished={() => setprogress(0)}
+      />
       <div className="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8">
         <div className="relative flex items-center justify-between h-16">
           <div className="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">

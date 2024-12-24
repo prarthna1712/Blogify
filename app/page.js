@@ -29,11 +29,8 @@ export default function Home() {
         <div className="w-full text-center lg:text-left lg:w-1/2 lg:-mt-8">
           <h1 className="text-3xl leading-snug text-gray-800 dark:text-gray-800 md:text-4xl">
             A <span className="font-semibold">free repository</span> for
-            community <br className="hidden lg:block" /> components using
-            <span
-              className="font-semibold underline decoration-primary"
-              href="https://tailwindcss.com/"
-            >
+            community <br className="hidden lg:block" /> components using{" "}
+            <span className="font-semibold underline decoration-primary">
               <span ref={el} />
             </span>
           </h1>
