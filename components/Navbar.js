@@ -25,13 +25,13 @@ const Navbar = () => {
 
     setTimeout(() => {
       setprogress(100);
-    }, 800);
+    }, 400);
   }, [pathname]);
 
   useEffect(() => {
     setTimeout(() => {
       setprogress(0);
-    }, 900);
+    }, 500);
   }, []);
 
   return (
