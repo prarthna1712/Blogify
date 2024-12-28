@@ -65,7 +65,7 @@ g++ --version
 
 Here’s what a simple C++ program looks like:
 
-```cpp
+```cpp showLineNumbers
 #include <iostream>
 using namespace std;
 
@@ -99,7 +99,7 @@ Variables are containers used to store data values. C++ supports various data ty
 
 Here’s an example of defining and using different variable types in C++:
 
-```cpp
+```cpp showLineNumbers
 #include <iostream>
 #include <string> // Required for using strings
 using namespace std;
@@ -137,7 +137,7 @@ Control structures are used to determine the flow of a program. C++ provides sev
 
 The `if-else` statement allows you to execute code based on a condition.
 
-```cpp
+```cpp showLineNumbers
 #include <iostream>
 using namespace std;
 
@@ -158,7 +158,7 @@ int main() {
 
 Nested `if-else` allows you to check multiple conditions within other conditions.
 
-```cpp
+```cpp showLineNumbers
 if (condition1) {
     if (condition2) {
         // Code if both condition1 and condition2 are true
@@ -179,7 +179,7 @@ The `switch` statement is used to execute one block of code among many based on 
 
 ### Syntax
 
-```cpp
+```cpp showLineNumbers
 switch (expression) {
     case value1:
         // Code to execute if expression == value1
@@ -212,7 +212,7 @@ The `for` loop is used when the number of iterations is known beforehand. It con
 
 #### Syntax
 
-```cpp
+```cpp showLineNumbers
 for (initialization; condition; update) {
     // Code to execute repeatedly
 }
@@ -220,7 +220,7 @@ for (initialization; condition; update) {
 
 #### Example: Printing Numbers
 
-```cpp
+```cpp showLineNumbers
 #include <iostream>
 using namespace std;
 
@@ -241,7 +241,7 @@ The `while` loop is used to execute a block of code repeatedly as long as the sp
 
 ### Syntax
 
-```cpp
+```cpp showLineNumbers
 while (condition) {
     // Code to execute while the condition is true
 }
@@ -249,7 +249,7 @@ while (condition) {
 
 #### Example: Printing Numbers from 1 to 5
 
-```cpp
+```cpp showLineNumbers
 #include <iostream>
 using namespace std;
 
@@ -274,7 +274,7 @@ The `do-while` loop ensures that the code block executes at least once before th
 
 ### Syntax
 
-```cpp
+```cpp showLineNumbers
 do {
     // Code to execute
 } while (condition);
@@ -282,7 +282,7 @@ do {
 
 #### Example: Printing Numbers from 1 to 5
 
-```cpp
+```cpp showLineNumbers
 #include <iostream>
 using namespace std;
 
@@ -309,7 +309,7 @@ Functions are reusable blocks of code designed to perform a specific task. They 
 
 ### Syntax
 
-```cpp
+```cpp showLineNumbers
 return_type function_name(parameters) {
     // Function body: statements to execute
     return value; // Optional (for non-void functions)
@@ -318,7 +318,7 @@ return_type function_name(parameters) {
 
 #### Example: Adding Two Numbers
 
-```cpp
+```cpp showLineNumbers
 #include <iostream>
 using namespace std;
 
@@ -356,7 +356,7 @@ A **class** is a blueprint for creating objects. Objects are instances of classe
 
 ### Syntax
 
-```cpp
+```cpp showLineNumbers
 class ClassName {
     public:
         int variable; // Member variable
@@ -383,7 +383,7 @@ int main() {
 
 #### Syntax:
 
-```cpp
+```cpp showLineNumbers
 class ClassName {
     public:
         // Constructor
@@ -411,7 +411,7 @@ int main() {
 
 #### Syntax
 
-```cpp
+```cpp showLineNumbers
 class Example {
     private:
         int data; // Private data
@@ -442,7 +442,7 @@ int main() {
 
 #### Syntax:
 
-```cpp
+```cpp showLineNumbers
 class BaseClass {
     public:
         void baseFunction() {
@@ -475,7 +475,7 @@ int main() {
 
 Function overloading allows defining multiple functions with the same name but different parameters.
 
-```cpp
+```cpp showLineNumbers
 class Example {
     public:
         void func() {
@@ -496,7 +496,7 @@ class Example {
 
 Function overriding allows a derived class to provide a specific implementation of a method already defined in its base class.
 
-```cpp
+```cpp showLineNumbers
 class Base {
     public:
         virtual void display() {
@@ -527,7 +527,7 @@ int main() {
 
 #### Syntax
 
-```cpp
+```cpp showLineNumbers
 class AbstractClass {
     public:
         virtual void abstractMethod() = 0; // Pure virtual function
@@ -559,7 +559,7 @@ Templates allow you to write generic and reusable code. They are a cornerstone o
   Enables defining functions that can work with any data type.  
   Example:
 
-  ```cpp
+  ```cpp showLineNumbers
   template <typename T>
   T add(T a, T b) {
       return a + b;
@@ -570,7 +570,7 @@ Templates allow you to write generic and reusable code. They are a cornerstone o
   Similar to function templates but for classes.
   Example:
 
-```cpp
+```cpp showLineNumbers
 template <typename T>
 class MyClass {
     T value;
@@ -596,7 +596,7 @@ STL provides pre-written, highly optimized template classes and functions for co
   Abstract pointers for navigating through containers.
   Example:
 
-```cpp
+```cpp showLineNumbers
 for (auto it = container.begin(); it != container.end(); ++it) {
     std::cout << *it;
 }
@@ -606,7 +606,7 @@ for (auto it = container.begin(); it != container.end(); ++it) {
   Perform operations like sorting, searching, and transforming containers.
   Example:
 
-```cpp
+```cpp showLineNumbers
 std::sort(vec.begin(), vec.end());
 ```
 
@@ -618,7 +618,7 @@ Smart pointers automate memory management and prevent memory leaks.
   Owns a resource and ensures no other pointer can access it.
   Example:
 
-  ```cpp
+  ```cpp showLineNumbers
   std::unique_ptr<int> ptr = std::make_unique<int>(10);
   ```
 
@@ -626,7 +626,7 @@ Smart pointers automate memory management and prevent memory leaks.
   Shared ownership; multiple pointers can share the same resource.
   Example:
 
-```cpp
+```cpp showLineNumbers
 std::shared_ptr<int> ptr1 = std::make_shared<int>(20);
 std::shared_ptr<int> ptr2 = ptr1;
 
@@ -640,7 +640,7 @@ C++ provides fine-grained control over memory allocation, which can be critical 
   Allocate memory at runtime using new and delete.
   Example:
 
-```cpp
+```cpp showLineNumbers
 int* ptr = new int(5);
 delete ptr;
 ```
@@ -659,7 +659,7 @@ Introduced in C++11, these concepts optimize resource management by eliminating 
   Transfers ownership of resources instead of copying them.
   Example:
 
-  ```cpp
+  ```cpp showLineNumbers
   class MyClass {
     int* data;
   public:
@@ -676,7 +676,7 @@ Introduced in C++11, these concepts optimize resource management by eliminating 
     Allows binding to temporary (rvalue) objects, enabling efficient manipulation.
     Example:
 
-    ```cpp
+    ```cpp showLineNumbers
     void process(std::string&& str) {
     std::cout << "Processing: " << str;
     }
