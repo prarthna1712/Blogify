@@ -18,7 +18,7 @@ const Navbar = () => {
   const [progress, setprogress] = useState(0);
   const pathname = usePathname;
   useEffect(() => {
-    setprogress(30);
+    setprogress(20);
     setTimeout(() => {
       setprogress(70);
     }, 100);
@@ -37,7 +37,7 @@ const Navbar = () => {
   return (
     <nav className="p-4 bg-background/50 sticky top-0 border-b backdrop-blur z-10">
       <LoadingBar
-        color="#f11946"
+        color="#ca5cdd"
         progress={progress}
         onLoaderFinished={() => setprogress(0)}
       />
