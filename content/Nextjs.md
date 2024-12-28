@@ -48,7 +48,7 @@ Here are some features that make Next.js stand out:
 
 To get started, install Next.js in your project:
 
-```bash
+```bash showLineNumbers
 npx create-next-app@latest my-next-app
 cd my-next-app
 npm run dev
