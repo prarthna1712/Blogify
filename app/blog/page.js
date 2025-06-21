@@ -36,16 +36,15 @@ const Blog = () => {
                   <p>By {blog.author}</p>
                   <p>{new Date(blog.date).toLocaleDateString()}</p>
                 </div>
+                <Link
+                  href={`/blogpost/${blog.slug}`}
+                  className={`${buttonVariants({
+                    variant: "outline",
+                  })} inline-block mt-4 p-2 rounded-md text-center dark:text-gray-600`}
+                >
+                  Click here
+                </Link>
               </div>
-
-              <Link
-                href={`/blogpost/${blog.slug}`}
-                className={`${buttonVariants({
-                  variant: "outline",
-                })} inline-block mt-4 p-2 rounded-md text-center dark:text-gray-600`}
-              >
-                Click here
-              </Link>
             </div>
           ))}
         </div>

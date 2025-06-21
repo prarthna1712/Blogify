@@ -1,6 +1,6 @@
 ---
 title: C++ Tutorial
-description: A comprehensive guide to learning C++ programming, covering basic to advanced concepts.
+description: A comprehensive guide to learning C++ programming & basic to advanced concepts.
 slug: cpp_programming_tutorial
 date: 2024-11-4
 author: ChatGPT
