@@ -128,13 +128,13 @@ const Navbar = () => {
                 className="mx-1 hover:scale-125 transition-transform duration-300"
                 variant="outline"
               >
-                Login{" "}
+                <a href="/login">Login</a>
               </Button>
               <Button
                 className="mx-1 hover:scale-125 transition-transform duration-300"
                 variant="outline"
               >
-                Sign up
+                <a href="/signup">Sign up</a>
               </Button>
               <ModeToggle />
             </div>
