@@ -10,22 +10,36 @@ export default function LoginPage() {
   const [password, setPassword] = useState("");
 
   const handleLogin = async () => {
-    const res = await fetch("/api/login", {
-      method: "POST",
-      body: JSON.stringify({ email, password }),
-    });
+    try {
+      const res = await fetch("/api/login", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ email, password }),
+      });
 
-    const data = await res.json();
-    if (data.success) {
-      router.push("/dashboard"); // Change to your landing page after login
-    } else {
-      alert(data.message);
+      let data = { success: false };
+
+      // Prevent parsing error if empty response
+      if (res.headers.get("content-type")?.includes("application/json")) {
+        data = await res.json();
+      }
+
+      if (data.success) {
+        router.push("/blog");
+      } else {
+        alert(data.message || "Login failed");
+      }
+    } catch (error) {
+      console.error("Login error:", error);
+      alert("Something went wrong!");
     }
   };
 
   return (
-    <div className="max-w-md mx-auto mt-20 p-8 rounded-xl shadow-lg bg-white">
-      <h2 className="text-2xl font-bold mb-6 text-center dark:text-gray-800">
+    <div className="max-w-md mx-auto mt-20 p-8 rounded-xl shadow-lg bg-white dark:bg-gray-900">
+      <h2 className="text-2xl font-bold mb-6 text-center text-gray-800 dark:text-white">
         Login
       </h2>
       <Input
@@ -43,15 +57,15 @@ export default function LoginPage() {
       />
       <Button
         onClick={handleLogin}
-        className="w-full border:solid border-gray-300 hover:bg-purple-600 hover:text-white"
+        className="w-full bg-primary text-white hover:bg-purple-700 transition dark:bg-purple-600 dark:hover:bg-purple-700"
       >
         Login
       </Button>
-      <p className="text-sm mt-4 text-center dark:text-gray-800">
+      <p className="text-sm mt-4 text-center text-gray-600 dark:text-gray-300">
         Don’t have an account?{" "}
         <a
           href="/signup"
-          className="text-blue-500 underline dark:text-gray-400"
+          className="text-blue-500 underline hover:text-blue-700 dark:text-blue-400"
         >
           Sign up
         </a>

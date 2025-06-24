@@ -10,22 +10,36 @@ export default function SignupPage() {
   const [password, setPassword] = useState("");
 
   const handleSignup = async () => {
-    const res = await fetch("/api/signup", {
-      method: "POST",
-      body: JSON.stringify({ email, password }),
-    });
+    try {
+      const res = await fetch("/api/signup", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ email, password }),
+      });
 
-    const data = await res.json();
-    if (data.success) {
-      router.push("/login");
-    } else {
-      alert(data.message);
+      let data = { success: false };
+
+      // Safely parse JSON if response is valid
+      if (res.headers.get("content-type")?.includes("application/json")) {
+        data = await res.json();
+      }
+
+      if (data.success) {
+        router.push("/login");
+      } else {
+        alert(data.message || "Signup failed");
+      }
+    } catch (err) {
+      console.error("Signup error:", err);
+      alert("Something went wrong!");
     }
   };
 
   return (
-    <div className="max-w-md mx-auto mt-20 p-8 rounded-xl shadow-lg bg-white">
-      <h2 className="text-2xl font-bold mb-6 text-center dark:text-gray-800">
+    <div className="max-w-md mx-auto mt-20 p-8 rounded-xl shadow-lg bg-white dark:bg-gray-900">
+      <h2 className="text-2xl font-bold mb-6 text-center text-gray-800 dark:text-white">
         Sign Up
       </h2>
       <Input
@@ -43,13 +57,16 @@ export default function SignupPage() {
       />
       <Button
         onClick={handleSignup}
-        className="w-full border:solid border-gray-300 hover:bg-purple-600 hover:text-white"
+        className="w-full bg-primary text-white hover:bg-purple-700 transition dark:bg-purple-600 dark:hover:bg-purple-700"
       >
         Sign Up
       </Button>
-      <p className="text-sm mt-4 text-center dark:text-gray-800">
+      <p className="text-sm mt-4 text-center text-gray-600 dark:text-gray-300">
         Already have an account?{" "}
-        <a href="/login" className="text-blue-500 underline">
+        <a
+          href="/login"
+          className="text-blue-500 underline hover:text-blue-700 dark:text-blue-400"
+        >
           Login
         </a>
       </p>
