@@ -178,62 +178,85 @@ export default function Home() {
 
         <div className="flex flex-wrap justify-center gap-8 mt-8">
           {/* Blog Post 1 */}
+
           <div className="max-w-xs p-6 bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-300 hover:scale-105 transition-transform duration-300">
             <img
-              src="/tailwind.webp"
-              alt="Getting Started with Tailwind CSS"
+              src=" /tailwind.webp" // You uploaded this, see update below
+              alt="My Portfolio Project 1"
               className="w-full h-40 object-cover rounded-lg"
             />
             <h3 className="mt-4 text-2xl font-semibold text-gray-800 dark:text-gray-200">
-              Getting Started with Tailwind CSS
+              Blogify application
             </h3>
             <p className="mt-4 text-gray-500 dark:text-gray-400">
-              Learn the basics of Tailwind CSS and how to quickly set up your
-              project for faster, easier styling.Tailwind's utility-first
-              approach simplifies designing responsive, modern, and visually
-              appealing web applications.
+              Bogify is an application which is Portfolio of mine, which
+              contains all my projects and blogs. It is built using Next.js,
+              Tailwind CSS, and ShadCN. It also has a blog section where I wrote
+              Technology related blogs.
             </p>
-            <button className="w-full px-4 py-2 mt-6 text-white bg-primary rounded-lg hover:bg-primary/70 focus:outline-none dark:bg-primary dark:hover:bg-primary/80 dark:text-black">
-              Read More
-            </button>
+            <a
+              href="https://github.com/prarthna1712/Blogify.git"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="w-full px-4 py-2 mt-6 text-white bg-primary rounded-lg hover:bg-primary/70 focus:outline-none dark:bg-primary dark:hover:bg-primary/80 dark:text-black">
+                View on GitHub
+              </button>
+            </a>
           </div>
 
           {/* Blog Post 2 */}
           <div className="max-w-xs p-6 bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-300 hover:scale-105 transition-transform duration-300">
             <img
-              src="/component-10.webp"
-              alt="10 Essential UI Components for Web Apps"
+              src="/component-10.webp" // You uploaded this, see update below
+              alt="My Portfolio Project 1"
               className="w-full h-40 object-cover rounded-lg"
             />
             <h3 className="mt-4 text-2xl font-semibold text-gray-800 dark:text-gray-200">
-              10 Essential UI Components for Web Apps
+              Rainanalytics
             </h3>
             <p className="mt-4 text-gray-500 dark:text-gray-400">
-              Discover the must-have UI components that will enhance user
-              experience and streamline your development process.
+              Rainfall Prediction Web App powered by Machine Learning (Flask)
+              and a React frontend. Users can input temperature, humidity, and
+              wind speed to get prediction of rainfall accordingly.
             </p>
-            <button className="w-full px-4 py-2 mt-6 text-white bg-primary rounded-lg hover:bg-primary/70 focus:outline-none dark:bg-primary dark:hover:bg-primary/80 dark:text-black">
-              Read More
-            </button>
+            <a
+              href="https://github.com/prarthna1712/Rainanalytics.git"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="w-full px-4 py-2 mt-6 text-white bg-primary rounded-lg hover:bg-primary/70 focus:outline-none dark:bg-primary dark:hover:bg-primary/80 dark:text-black">
+                View on GitHub
+              </button>
+            </a>
           </div>
 
           {/* Blog Post 3 */}
+
           <div className="max-w-xs p-6 bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-300 hover:scale-105 transition-transform duration-300">
             <img
-              src="/shadcn.webp"
-              alt="Advanced Customization with ShadCN"
+              src=" /shadcn.webp" // You uploaded this, see update below
+              alt="My Portfolio Project 1"
               className="w-full h-40 object-cover rounded-lg"
             />
             <h3 className="mt-4 text-2xl font-semibold text-gray-800 dark:text-gray-200">
-              Advanced Customization with ShadCN
+              Inventra - System
             </h3>
             <p className="mt-4 text-gray-500 dark:text-gray-400">
-              Discover how ShadCN can help you create highly customizable UI
-              components with a consistent design language.
+              A modern inventory management web application built with Next.js,
+              MongoDB and Tailwind CSS. It allows users to efficiently add,
+              search, update, and manage product stock, search and user
+              feedback.
             </p>
-            <button className="w-full px-4 py-2 mt-6 text-white bg-primary rounded-lg hover:bg-primary/70 focus:outline-none dark:bg-primary dark:hover:bg-primary/80 dark:text-black">
-              Read More
-            </button>
+            <a
+              href="https://github.com/prarthna1712/Inventra-System.git"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="w-full px-4 py-2 mt-6 text-white bg-primary rounded-lg hover:bg-primary/70 focus:outline-none dark:bg-primary dark:hover:bg-primary/80 dark:text-black">
+                View on GitHub
+              </button>
+            </a>
           </div>
         </div>
       </section>
