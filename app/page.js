@@ -172,10 +172,10 @@ export default function Home() {
       </section>
       <section className="container px-4 py-10 mx-auto text-center bg-gray-100 dark:bg-gray-900">
         <h2 className="text-3xl font-semibold text-gray-800 dark:text-gray-200 md:text-4xl">
-          Latest Blog Posts
+          Projects
         </h2>
         <p className="mt-4 text-lg text-gray-500 dark:text-gray-400">
-          Discover tips, resources, and updates from our team!
+          Discover Tech-Stack, ideas, and updates!
         </p>
 
         <div className="flex flex-wrap justify-center gap-8 mt-8">
@@ -183,7 +183,7 @@ export default function Home() {
 
           <div className="max-w-xs p-6 bg-white border border-gray-200 rounded-lg shadow-md dark:bg-gray-800 dark:border-gray-300 hover:scale-105 transition-transform duration-300">
             <img
-              src=" /tailwind.webp" // You uploaded this, see update below
+              src=" /tailwind.webp"
               alt="My Portfolio Project 1"
               className="w-full h-40 object-cover rounded-lg"
             />
