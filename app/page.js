@@ -52,7 +52,7 @@ export default function Home() {
         </div>
         <div className="w-full mt-4 lg:mt-0 lg:w-1/2">
           <img
-            src="https://www.creative-tim.com/twcomponents/svg/website-designer-bro-purple.svg"
+            src="\WhatsApp Image 2025-07-28 at 8.20.22 PM.jpeg"
             alt="tailwind css components"
             className="w-full h-full max-w-md mx-auto"
           />
