@@ -9,11 +9,11 @@ export default function Home() {
   React.useEffect(() => {
     const typed = new Typed(el.current, {
       strings: [
-        "Coding",
-        "Web Development",
-        "Software Engineering",
-        "Data Science",
-        "Machine Learning",
+        "Full Stack Development",
+        "Python, JavaScript, React, Next.js",
+        "AWS - EC2, S3, RDS",
+        "ShadCN, tailwind CSS",
+        "MySQL and MongoDB",
       ],
       typeSpeed: 50,
     });
@@ -28,17 +28,19 @@ export default function Home() {
       <section className="container px-4 py-10 mx-auto lg:h-128 lg:space-x-8 lg:flex lg:items-center bg-gray-200">
         <div className="w-full text-center lg:text-left lg:w-1/2 lg:-mt-8">
           <h1 className="text-3xl leading-snug text-gray-800 dark:text-gray-800 md:text-4xl">
-            A <span className="font-semibold">free repository</span> for
-            community <br className="hidden lg:block" /> components using{" "}
+            A Portfolio of{" "}
+            <span className="font-semibold">Prarthana Bhalerao</span>{" "}
+            <br className="hidden lg:block" /> Expertise in{" "}
             <span className="font-semibold underline decoration-primary">
               <span ref={el} />
             </span>
           </h1>
           <div>
             <p className="mt-4 text-lg text-gray-500 dark:text-gray-400">
-              Open source Tailwind UI components and templates to{" "}
-              <br className="hidden lg:block" /> bootstrap your new apps,
-              projects or landing sites!
+              I'm a passionate full-stack developer skilled in React, Next.js,
+              Tailwind CSS, ShadCN, Flask, Python, MySQL, and MongoDB. I enjoy
+              building responsive, scalable web applications and working with
+              cloud platforms like AWS.
             </p>
           </div>
           <div className="mt-6 bg-transparent border rounded-lg dark:border-gray-700 lg:w-2/3 focus-within:border-primary focus-within:ring focus-within:ring-primary dark:focus-within:border-primary focus-within:ring-opacity-20">
